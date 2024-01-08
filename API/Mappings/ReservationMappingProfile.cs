@@ -15,8 +15,11 @@ namespace API.Mappings {
             CreateMap<Reservation, ReservationReadDto>()
                 .ForMember(x => x.Date, x => x.MapFrom(x => DateHelpers.DateToISOString(x.Date)))
                 .ForMember(x => x.Customer, x => x.MapFrom(x => new SimpleEntity { Id = x.Customer.Id, Description = x.Customer.Description }))
-                .ForMember(x => x.Destination, x => x.MapFrom(x => new SimpleEntity { Id = x.Destination.Id, Description = x.Destination.Description }))
-                .ForMember(x => x.Destination, x => x.MapFrom(x => new SimpleEntity { Id = x.Destination.Id, Description = x.Destination.Description }))
+                .ForMember(x => x.Destination, x => x.MapFrom(x => new DestinationDropdownVM {
+                    Id = x.Destination.Id,
+                    Description = x.Destination.Description,
+                    IsPassportRequired = x.Destination.IsPassportRequired
+                }))
                 .ForMember(x => x.PickupPoint, x => x.MapFrom(x => new PickupPointVM {
                     Id = x.PickupPoint.Id,
                     Description = x.PickupPoint.Description,
@@ -38,7 +41,9 @@ namespace API.Mappings {
                     Gender = new SimpleEntity {
                         Id = passenger.Gender.Id,
                         Description = passenger.Gender.Description
-                    }
+                    },
+                    PassportNo = passenger.PassportNo,
+                    PassportExpireDate = DateHelpers.DateToISOString(passenger.PassportExpireDate),
                 })));
             // Read passenger
             CreateMap<Passenger, PassengerReadDto>()

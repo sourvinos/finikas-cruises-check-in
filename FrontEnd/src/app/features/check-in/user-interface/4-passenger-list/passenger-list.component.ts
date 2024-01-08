@@ -65,6 +65,8 @@ export class PassengerListComponent {
                 lastname: passenger.lastname,
                 firstname: passenger.firstname,
                 birthdate: passenger.birthdate,
+                passportNo: passenger.passportNo,
+                passportExpireDate: passenger.passportExpireDate,
                 remarks: passenger.remarks,
                 specialCare: passenger.specialCare
             }

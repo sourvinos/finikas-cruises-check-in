@@ -13,6 +13,8 @@ export interface CheckInPassengerReadDto {
     lastname: string
     firstname: string
     birthdate: string
+    passportNo: string
+    passportExpireDate: string
     remarks: string
     specialCare: string
 

@@ -19,6 +19,10 @@ namespace API.Infrastructure.Helpers {
             return TimeZoneInfo.ConvertTimeBySystemTimeZoneId(DateTime.Now, "E. Europe Standard Time");
         }
 
+        public static bool BeEmptyOrValidDate(string date) {
+            return date != "" || DateTime.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _);
+        }
+
     }
 
 }

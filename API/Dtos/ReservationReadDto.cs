@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using API.Infrastructure.Classes;
+using API.ViewModels;
 
 namespace API.Dtos {
 
@@ -25,7 +26,7 @@ namespace API.Dtos {
         public string PutUser { get; set; }
         //  Navigation
         public SimpleEntity Customer { get; set; }
-        public SimpleEntity Destination { get; set; }
+        public DestinationDropdownVM Destination { get; set; }
         public SimpleEntity PickupPoint { get; set; }
         public SimpleEntity Driver { get; set; }
         public SimpleEntity Ship { get; set; }
