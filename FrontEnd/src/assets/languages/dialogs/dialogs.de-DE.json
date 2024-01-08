@@ -1,0 +1,43 @@
+[
+    {
+        "feature": "snackbarMessages",
+        "labels": [
+            {
+                "error": 200,
+                "message": "Alles OK"
+            },
+            {
+                "error": 400,
+                "message": "Das Modell ist ungültig"
+            },
+            {
+                "error": 500,
+                "message": "Etwas ist nicht so gut gelaufen, aber es wurde protokolliert"
+            },
+            {
+                "id": "emailSent",
+                "message": "Wir haben Ihnen gerade eine E-Mail geschickt"
+            },
+            {
+                "id": "emailNotSent",
+                "message": "Wir können Ihnen im Moment keine E-Mail schicken, bitte versuchen Sie es in Kürze erneut"
+            },
+            {
+                "id": "noContactWithServer",
+                "message": "Die Datenbank hat nicht geantwortet"
+            },
+            {
+                "id": "reservationNotFound",
+                "message": "Ihre Reservierung wurde nicht gefunden"
+            },
+            {
+                "id": "helpDialog",
+                "message": "Sie können sich an den Ort wenden, an dem Sie die Reservierung vorgenommen haben, oder an einen von uns unter +30 26610 71150 oder +30 26620 61400"
+            },
+            {
+                "id": "checkInAfterDepartureIsNotAllowed",
+                "message": "Ihre Reservierung wurde gefunden, aber das Einchecken nach der Abfahrt des Schiffes ist nicht erlaubt"
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "labels": [
+        { "id": "required", "description": "Toto pole je povinné" },
+        { "id": "invalid", "description": "Toto pole je neplatné" },
+        { "id": "minLength", "description": "Toto pole musí mít alespoň xx znaků" },
+        { "id": "maxLength", "description": "Toto pole může být dlouhé až xx znaků" },
+        { "id": "beginsOrEndsWithSpace", "description": "Toto pole nesmí začínat ani končit mezerou" },
+        { "id": "containsIllegalCharacters", "description": "Toto pole umožňuje pouze alfanumerické znaky nebo podtržítka" },
+        { "id": "spacesNotAllowed", "description": "Toto pole nesmí obsahovat mezery" },
+        { "id": "otherErrors", "description": "Toto pole obsahuje chyby" }
+    ]
+}

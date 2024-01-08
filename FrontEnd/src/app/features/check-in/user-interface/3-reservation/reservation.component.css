@@ -1,0 +1,13 @@
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+#form {
+    row-gap: 0.1rem;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}

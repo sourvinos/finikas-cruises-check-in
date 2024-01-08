@@ -1,0 +1,12 @@
+{
+    "labels": [
+        { "id": "required", "description": "This field is required" },
+        { "id": "invalid", "description": "This field is invalid" },
+        { "id": "minLength", "description": "This field must be at least xx characters long" },
+        { "id": "maxLength", "description": "This field can be up to xx characters long" },
+        { "id": "beginsOrEndsWithSpace", "description": "This field can't begin or end with a space" },
+        { "id": "containsIllegalCharacters", "description": "This field allows only alphanumeric characters or underscores" },
+        { "id": "spacesNotAllowed", "description": "This field can't contain spaces" },
+        { "id": "otherErrors", "description": "This field has errors" }
+    ]
+}

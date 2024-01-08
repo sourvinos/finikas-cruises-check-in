@@ -1,0 +1,43 @@
+[
+    {
+        "feature": "snackbarMessages",
+        "labels": [
+            {
+                "error": 200,
+                "message": "Tout est OK"
+            },
+            {
+                "error": 400,
+                "message": "Le modèle n'est pas valide"
+            },
+            {
+                "error": 500,
+                "message": "Quelque chose ne s'est pas très bien passé, mais cela a été enregistré"
+            },
+            {
+                "id": "emailSent",
+                "message": "Nous venons de vous envoyer un courriel"
+            },
+            {
+                "id": "emailNotSent",
+                "message": "Nous ne pouvons pas vous envoyer d'e-mail pour l'instant, veuillez réessayer dans quelques instants"
+            },
+            {
+                "id": "noContactWithServer",
+                "message": "Il n'y a pas de réponse de la base de données"
+            },
+            {
+                "id": "reservationNotFound",
+                "message": "Votre réservation n'a pas été trouvée"
+            },
+            {
+                "id": "helpDialog",
+                "message": "Vous pouvez contacter le lieu où vous avez effectué la réservation ou l'un de nous au +30 26610 71150 ou au +30 26620 61400"
+            },
+            {
+                "id": "checkInAfterDepartureIsNotAllowed",
+                "message": "Votre réservation a été trouvée, mais l'enregistrement après le départ du navire n'est pas autorisé"
+            }
+        ]
+    }
+]

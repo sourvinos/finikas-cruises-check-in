@@ -1,0 +1,8 @@
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+#new-passenger-button {
+    margin: 0 1rem 0 auto;
+}

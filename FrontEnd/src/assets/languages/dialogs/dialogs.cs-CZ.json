@@ -1,0 +1,43 @@
+[
+    {
+        "feature": "snackbarMessages",
+        "labels": [
+            {
+                "error": 200,
+                "message": "Vše OK"
+            },
+            {
+                "error": 400,
+                "message": "Model je neplatný"
+            },
+            {
+                "error": 500,
+                "message": "Něco se nepovedlo, ale bylo to nahlášeno"
+            },
+            {
+                "id": "emailSent",
+                "message": "Právě jsme vám poslali e-mail"
+            },
+            {
+                "id": "emailNotSent",
+                "message": "Nemůžeme vám nyní poslat e-mail, zkuste to prosím za chvíli znovu"
+            },
+            {
+                "id": "noContactWithServer",
+                "message": "Z databáze nepřišla žádná odpověď"
+            },
+            {
+                "id": "reservationNotFound",
+                "message": "Vaše rezervace nebyla nalezena"
+            },
+            {
+                "id": "helpDialog",
+                "message": "Můžete se obrátit na místo, kde jste rezervaci provedli, nebo na jednoho z nás na telefonním čísle +30 26610 71150 nebo +30 26620 61400"
+            },
+            {
+                "id": "checkInAfterDepartureIsNotAllowed",
+                "message": "Vaše rezervace byla nalezena, ale přihlášení po odjezdu lodi není povoleno"
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "labels": [
+        { "id": "required", "description": "Ce champ est obligatoire" },
+        { "id": "invalid", "description": "Ce champ n'est pas valide" },
+        { "id": "minLength", "description": "Ce champ doit comporter au moins xx caractères" },
+        { "id": "maxLength", "description": "Ce champ peut contenir jusqu'à xx caractères" },
+        { "id": "beginsOrEndsWithSpace", "description": "Ce champ ne peut pas commencer ou se terminer par un espace" },
+        { "id": "containsIllegalCharacters", "description": "Ce champ n'autorise que les caractères alphanumériques ou les traits de soulignement" },
+        { "id": "spacesNotAllowed", "description": "Ce champ ne peut pas contenir d'espaces" },
+        { "id": "otherErrors", "description": "Ce champ contient des erreurs" }
+    ]
+}
