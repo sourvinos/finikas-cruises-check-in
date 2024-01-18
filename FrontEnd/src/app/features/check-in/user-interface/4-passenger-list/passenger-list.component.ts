@@ -3,9 +3,9 @@ import { MatDialog } from '@angular/material/dialog'
 import { Router } from '@angular/router'
 import { Table } from 'primeng/table'
 // Custom
-import { CheckInHelperService } from '../../classes/services/check-in.helper.service'
-import { CheckInHttpService } from '../../classes/services/check-in.http.service'
-import { CheckInPassengerReadDto } from '../../classes/dtos/check-in-passenger-read-dto'
+import { CheckInHelperService } from '../../classes/services/check-in-helper.service'
+import { CheckInHttpService } from '../../classes/services/check-in-http.service'
+import { PassengerReadDto } from '../../classes/dtos/passenger-read-dto'
 import { DialogService } from 'src/app/shared/services/modal-dialog.service'
 import { EmojiService } from 'src/app/shared/services/emoji.service'
 import { HelperService } from 'src/app/shared/services/helper.service'
@@ -25,7 +25,7 @@ export class PassengerListComponent {
 
     //#region variables
 
-    @Input() passengers: CheckInPassengerReadDto[] = []
+    @Input() passengers: PassengerReadDto[] = []
     @ViewChild('table') table: Table | undefined
     public feature = 'check-in'
     public reservation: ReservationVM
@@ -65,8 +65,6 @@ export class PassengerListComponent {
                 lastname: passenger.lastname,
                 firstname: passenger.firstname,
                 birthdate: passenger.birthdate,
-                passportNo: passenger.passportNo,
-                passportExpireDate: passenger.passportExpireDate,
                 remarks: passenger.remarks,
                 specialCare: passenger.specialCare
             }

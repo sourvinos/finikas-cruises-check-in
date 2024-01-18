@@ -1,10 +1,10 @@
 // ng build --output-path="release" --configuration=production-live
 
 export const environment = {
-    apiUrl: 'https://appcorfucruises.com/api',
-    url: 'https://appcorfucruises.com',
-    appName: 'Corfu Cruises',
-    clientUrl: 'https://appcorfucruises.com',
+    apiUrl: 'https://appfinikascruises.com/api',
+    url: 'https://appfinikascruises.com',
+    appName: 'Finikas Cruises',
+    clientUrl: 'https://appfinikascruises.com',
     defaultLanguage: 'en-GB',
     emailFooter: {
         lineA: 'Problems or questions? Call us at +30 26620 61400',

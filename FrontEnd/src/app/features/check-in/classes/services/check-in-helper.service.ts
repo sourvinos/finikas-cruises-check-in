@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core'
 // Custom
-import { CheckInPassengerWriteDto } from '../dtos/check-in-passenger-write-dto'
-import { CheckInReservationWriteDto } from '../dtos/check-in-reservation-write-dto'
+import { PassengerWriteDto } from '../dtos/passenger-write-dto'
+import { ReservationWriteDto } from '../dtos/reservation-write-dto'
 import { DateHelperService } from 'src/app/shared/services/date-helper.service'
-import { CheckInReservationReadDto } from '../dtos/check-in-reservation-read-dto'
+import { ReservationReadDto } from '../dtos/reservation-read-dto'
 
 @Injectable({ providedIn: 'root' })
 
@@ -13,8 +13,8 @@ export class CheckInHelperService {
 
     //#region public methods
 
-    public flattenForm(reservation: CheckInReservationReadDto): CheckInReservationWriteDto {
-        const x: CheckInReservationWriteDto = {
+    public flattenForm(reservation: ReservationReadDto): ReservationWriteDto {
+        const x: ReservationWriteDto = {
             reservationId: reservation.reservationId,
             destinationId: reservation.destination.id,
             pickupPointId: reservation.pickupPoint.id,
@@ -29,10 +29,10 @@ export class CheckInHelperService {
 
     //#region private methods
 
-    private mapPassengers(reservation: CheckInReservationReadDto): CheckInPassengerWriteDto[] {
+    private mapPassengers(reservation: ReservationReadDto): PassengerWriteDto[] {
         const x = []
         reservation.passengers.forEach((passenger: any) => {
-            const z: CheckInPassengerWriteDto = {
+            const z: PassengerWriteDto = {
                 reservationId: passenger.reservationId,
                 genderId: passenger.gender.id,
                 nationalityId: passenger.nationality.id,

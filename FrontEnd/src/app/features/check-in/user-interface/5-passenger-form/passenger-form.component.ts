@@ -3,7 +3,7 @@ import { Component, Inject, NgZone } from '@angular/core'
 import { DateAdapter } from '@angular/material/core'
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog'
 // Custom
-import { CheckInPassengerReadDto } from '../../classes/dtos/check-in-passenger-read-dto'
+import { PassengerReadDto } from '../../classes/dtos/passenger-read-dto'
 import { DateHelperService } from 'src/app/shared/services/date-helper.service'
 import { HelperService } from 'src/app/shared/services/helper.service'
 import { InputTabStopDirective } from 'src/app/shared/directives/input-tabstop.directive'
@@ -22,7 +22,7 @@ export class PassengerFormComponent {
 
     //#region variables
 
-    public passenger: CheckInPassengerReadDto
+    public passenger: PassengerReadDto
     public feature = 'check-in'
     public featureIcon = ''
     public form: FormGroup
@@ -42,7 +42,7 @@ export class PassengerFormComponent {
 
     //#endregion
 
-    constructor(@Inject(MAT_DIALOG_DATA) public data: CheckInPassengerReadDto, private dateAdapter: DateAdapter<any>, private dateHelperService: DateHelperService, private dialogRef: MatDialogRef<PassengerFormComponent>, private formBuilder: FormBuilder, private helperService: HelperService, private localStorageService: LocalStorageService, private messageHintService: MessageInputHintService, private messageLabelService: MessageLabelService, private ngZone: NgZone,) {
+    constructor(@Inject(MAT_DIALOG_DATA) public data: PassengerReadDto, private dateAdapter: DateAdapter<any>, private dateHelperService: DateHelperService, private dialogRef: MatDialogRef<PassengerFormComponent>, private formBuilder: FormBuilder, private helperService: HelperService, private localStorageService: LocalStorageService, private messageHintService: MessageInputHintService, private messageLabelService: MessageLabelService, private ngZone: NgZone,) {
         this.passenger = data
     }
 

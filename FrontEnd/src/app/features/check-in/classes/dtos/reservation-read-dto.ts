@@ -1,10 +1,10 @@
 import { Guid } from 'guid-typescript'
 // Custom
-import { CheckInPassengerReadDto } from './check-in-passenger-read-dto'
+import { PassengerReadDto } from './passenger-read-dto'
 import { PickupPointVM } from '../view-models/pickupPoint-vm'
 import { SimpleEntity } from 'src/app/shared/classes/simple-entity'
 
-export interface CheckInReservationReadDto {
+export interface ReservationReadDto {
 
     reservationId: Guid
     date: string
@@ -20,7 +20,7 @@ export interface CheckInReservationReadDto {
     customer: SimpleEntity
     destination: SimpleEntity
     pickupPoint: PickupPointVM
-    passengers: CheckInPassengerReadDto[]
+    passengers: PassengerReadDto[]
 
 }
 

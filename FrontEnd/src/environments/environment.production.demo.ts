@@ -3,7 +3,7 @@
 export const environment = {
     apiUrl: 'http://checkindemo-001-site1.htempurl.com/api',
     url: 'http://checkindemo-001-site1.htempurl.com',
-    appName: 'Corfu Cruises',
+    appName: 'Finikas Cruises',
     clientUrl: 'http://checkindemo-001-site1.htempurl.com',
     defaultLanguage: 'en-GB',
     emailFooter: {

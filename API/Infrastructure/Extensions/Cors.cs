@@ -7,7 +7,7 @@ namespace API.Infrastructure.Extensions {
         public static void AddCors(IServiceCollection services) {
             services
                 .AddCors(x => x.AddDefaultPolicy(builder => builder
-                .WithOrigins("https://localhost:4200", "http://checkindemo-001-site1.htempurl.com")
+                .WithOrigins("https://localhost:5200", "http://checkin.appfinikascruises.com")
                 .AllowAnyHeader()
                 .AllowCredentials()
                 .AllowAnyMethod()));

@@ -3,7 +3,7 @@ import { Component } from '@angular/core'
 import { MatDatepickerInputEvent } from '@angular/material/datepicker'
 import { Router } from '@angular/router'
 // Custom
-import { CheckInHttpService } from '../../classes/services/check-in.http.service'
+import { CheckInHttpService } from '../../classes/services/check-in-http.service'
 import { DateHelperService } from 'src/app/shared/services/date-helper.service'
 import { DialogService } from 'src/app/shared/services/modal-dialog.service'
 import { LocalStorageService } from 'src/app/shared/services/local-storage.service'

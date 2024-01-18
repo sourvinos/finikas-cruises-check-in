@@ -3,7 +3,7 @@ import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 import { Subject } from 'rxjs'
 // Custom
-import { CheckInHttpService } from '../../classes/services/check-in.http.service'
+import { CheckInHttpService } from '../../classes/services/check-in-http.service'
 import { DialogService } from 'src/app/shared/services/modal-dialog.service'
 import { LocalStorageService } from 'src/app/shared/services/local-storage.service'
 import { MessageDialogService } from 'src/app/shared/services/message-dialog.service'

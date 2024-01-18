@@ -3,7 +3,7 @@ import { Guid } from 'guid-typescript'
 import { NationalityDropdownVM } from 'src/app/features/nationalities/nationality-dropdown-vm'
 import { SimpleEntity } from 'src/app/shared/classes/simple-entity'
 
-export interface CheckInPassengerReadDto {
+export interface PassengerReadDto {
 
     id: number
     reservationId: Guid
@@ -13,8 +13,6 @@ export interface CheckInPassengerReadDto {
     lastname: string
     firstname: string
     birthdate: string
-    passportNo: string
-    passportExpireDate: string
     remarks: string
     specialCare: string
 

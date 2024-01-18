@@ -1,8 +1,8 @@
 import { Guid } from 'guid-typescript'
 // Custom
-import { CheckInPassengerWriteDto } from './check-in-passenger-write-dto'
+import { PassengerWriteDto } from './passenger-write-dto'
 
-export interface CheckInReservationWriteDto {
+export interface ReservationWriteDto {
 
     // PK
     reservationId: Guid
@@ -11,6 +11,6 @@ export interface CheckInReservationWriteDto {
     pickupPointId: number,
     portId: number,
     date: string,
-    passengers: CheckInPassengerWriteDto[]
+    passengers: PassengerWriteDto[]
 
 }

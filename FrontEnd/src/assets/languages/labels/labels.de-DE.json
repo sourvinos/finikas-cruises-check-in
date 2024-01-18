@@ -4,7 +4,7 @@
         "labels": [
             {
                 "id": "logo",
-                "description": "Corfu Cruises"
+                "description": "Finikas Cruises"
             },
             {
                 "id": "step-1-sub-header",
@@ -173,6 +173,14 @@
             {
                 "id": "step-5-birthdate",
                 "description": "Geburtsdatum"
+            },
+            {
+                "id": "step-5-passportNo",
+                "description": ""
+            },
+            {
+                "id": "step-5-passportExpireDate",
+                "description": ""
             },
             {
                 "id": "step-5-ok",
